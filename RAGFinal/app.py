@@ -7,9 +7,9 @@ import os
 st.set_page_config(page_title="RAG Chatbot", page_icon="🤖")
 st.title("BAJRA LEAVE POLICY")
 
-# -----------------------------
+
 # Session State
-# -----------------------------
+
 if "vectorstore" not in st.session_state:
     if os.path.exists("faiss_index"):
         st.session_state.vectorstore = load_faiss_index()
@@ -32,9 +32,9 @@ if "bm25" not in st.session_state or "bm25_docs" not in st.session_state:
         st.session_state.bm25 = None
         st.session_state.bm25_docs = None
 
-# -----------------------------
+
 # Sidebar: PDF Upload
-# -----------------------------
+
 with st.sidebar:
     st.header("Upload your PDF")
     uploaded_file = st.file_uploader("", type=["pdf"])
@@ -49,9 +49,8 @@ with st.sidebar:
         st.session_state.bm25, st.session_state.bm25_docs = create_bm25_index(split_docs)
         st.success("PDF processed and FAISS index saved successfully!")
 
-# -----------------------------
 # Main: User Query
-# -----------------------------
+
 user_input = st.text_input("Ask anything about your document:")
 
 if user_input and st.session_state.qa_chain:
