@@ -10,7 +10,7 @@ from langchain.document_loaders import PyPDFLoader
 from rank_bm25 import BM25Okapi
 
 # Set your Google API key
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyAsC36ctWxb_rNFyPGu5z3IgQsWbfZxWPU'
+os.environ['GOOGLE_API_KEY'] = 'KEY'
 
 FAISS_INDEX_PATH = "faiss_index"
 BM25_INDEX_PATH = "bm25_index.pkl"
