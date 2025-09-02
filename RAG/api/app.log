@@ -1,0 +1,12 @@
+ERROR:fastapi:Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+INFO:root:Session ID: None, User Query: How many holidays are there for female employes for maternity leave, Model: gpt-4o
+WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gpt-4o is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 4.0 seconds as it raised NotFound: 404 models/gpt-4o is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 8.0 seconds as it raised NotFound: 404 models/gpt-4o is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+INFO:backoff:Backing off send_request(...) for 0.1s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 16.0 seconds as it raised NotFound: 404 models/gpt-4o is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+WARNING:langchain_google_genai.chat_models:Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 32.0 seconds as it raised NotFound: 404 models/gpt-4o is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
